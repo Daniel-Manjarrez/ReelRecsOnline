@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    var current_time = "{{ current_time }}";
+    var elapsed_time = parseFloat("{{ elapsed_time }}").toFixed(2);
+    console.log("Current time:", current_time);
+    console.log("Elapsed time:", elapsed_time, "minutes");
+</script>
+
+<br>
+
+<!-- Top Rated Kdramas to Watch-->
+<!-- Remember, this is wrapped in a container -->
+<h1>
+    Overview On {{ title }}
+</h1>
+
+<br>
+
+<div>
+    <span class="intro"><i>The following are the details of your generated recommendation.</i></span>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <h2>{{ movie.title }}</h2>
+    </div>
+    <div class="col-md-6 d-flex align-items-stretch">
+        {% if movie.trailer %}
+         <iframe width="560" height="315" src="{{ trailer }}" frameborder="0" allowfullscreen></iframe>
+        {% else %}
+            <p>No trailer available</p>
+        {% endif %}
+    </div>
+    <div class="col-md-6 d-flex align-items-stretch vid-space">
+        <span class="row">
+            <p>{{ sum }}</p>
+        </span>
+    </div>
+    <div class="col-md-6 d-flex align-items-stretch">
+
+    </div>
+    <div class="col-md-6 d-flex align-items-stretch lift">
+        <i><b>Movie Rating:</b> {{ movie.us_rating }}
+            <b>User Score:</b> {{ movie.user_rating }} / 10
+            <b>Critic Score:</b> {{ movie.critic_score }} %</i>
+    </div>
+    
+</div>
+
+{% endblock %}

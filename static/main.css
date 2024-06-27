@@ -1,0 +1,402 @@
+.fixed-size-image {
+    width: 400px;
+    height: auto;
+}
+.highlight {
+    font-weight: 800;
+    /*color: #0000FF;*/
+}
+/* Custom CSS to ensure the card body expands to fill available space */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-body .btn {
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+.edit-button {
+    background-color: #f8f9fa; /* Light gray background */
+    color: black;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.medium-text{
+    font-size: 25px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.custom-line {
+    width: 100%; /* Full width of its container */
+    height: 1px; /* Thickness of the line */
+    background-color: darkgrey; /* Color of the line */
+    border: none; /* Remove any default border */
+} 
+body {
+    background-color: #FFFFF7;
+}
+/* one color scheme example*/
+.base {
+    color: #004175;
+}
+.accent {
+    color: #FF6B6B;
+}
+.lightGrey {
+    color: #F0F0F0;
+}
+.darkGrey {
+    color: #333333;
+}
+.intro {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: grey;
+    position: relative;
+    top: -10px;
+}
+.image-modified {
+    height: 225px;
+}
+.home-space {
+    margin-right: 27px;
+}
+.centering {
+    position: relative;
+    right: -493px;
+}
+.type-space1 {
+    margin-left: 30px;
+}
+.type-space2 {
+    margin-left: 6px;
+}
+.type-space3 {
+    margin-left: -8px;
+}
+.type-size {
+    height: 270px;
+    width: auto;
+}
+.type-bottom {
+    margin-top: 15px;
+}
+.type-bottom-text {
+    margin-left: 100px;
+    position: relative;
+    top: 11px;
+    color: grey;
+}
+.type-bottom-text-1 {
+    margin-left: 115px;
+    position: relative;
+    top: 11px;
+    color: grey;
+}
+.type-bottom-bottom {
+    margin-left: 180px;
+}
+.type-bottom-bottom-1 {
+    margin-left: 260px;
+}
+.lesson-intro {
+    margin-top: 20px;
+}
+.type-size-3 {
+    height: 200px;
+    width: auto;
+}
+.type-2-adjust {
+    margin-left: 27px;
+}
+.type-3-adjust {
+    margin-left: -100px;
+}
+.mechanic-adjust {
+    margin-left: 70px;
+}
+.mechanic-adjust-2 {
+    margin-left: 40px;
+}
+.mech-text-adjust {
+    position: relative;
+    left: -27px;
+}
+.type-alt-size {
+    height: 350px;
+    width: auto;
+}
+.type-overview {
+    margin-left: -55px;
+}
+
+.type-overview-1 {
+    margin-left: -15px;
+}
+
+.type-overview-2 {
+    margin-left: -55px;
+}
+
+.mech-overview {
+    margin-left: 0px;
+}
+.type-overview-alt-size {
+    height: 270px;
+    width: auto;
+}
+.mechanic-overview-alt-size {
+    height: 225px;
+    width: auto;
+}
+.recognition-overview-alt-size {
+    height: 225px;
+    width: auto;
+}
+.mechanics-example {
+    margin-left: 0px;
+}
+.mech-alt-size {
+    height: 170px;
+    width: auto;
+}
+.recog {
+    margin-left: -297px;
+}
+.recog2 {
+    margin-left: -465px;
+}
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.start-button {
+    height: auto;
+    width: 80px;
+}
+
+/* brandon additional css */
+
+.quiz-title-space {
+    margin-bottom: 35px;
+}
+
+.quiz-button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    gap: 20px; /* Adjust the gap between buttons as needed */
+    margin: 4%;
+}
+
+.quiz-button-container-1 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    gap: 25px; /* Adjust the gap between buttons as needed */
+    margin: 4%;
+    margin-left: 5px;
+}
+
+.quiz-button {
+    border: none;
+    background-color: #007bff; /* Adjust background color as needed */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 7px;
+}
+
+.quiz-button-green {
+    border: none;
+    background-color: green; /* Adjust background color as needed */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 7px;
+}
+
+.quiz-button-red {
+    border: none;
+    background-color: red; /* Adjust background color as needed */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 7px;
+}
+
+.quiz-button:hover {
+    background-color: #3B4B5A; /* Adjust hover color as needed */
+}
+
+/* for test page */
+.button-container {
+    display: flex; /* Aligns items in a row */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px;
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    width: max-content; /* Fits container width to its content */
+    margin: 10px; /* Adds some space around the container */
+    text-align: center;
+}
+
+.input-text {
+    padding: 10px;
+    margin-right: 10px; /* Adds space between input and button */
+    font-size: 16px; /* Sets font size for the text inside the input */
+    border: 1px solid #ccc; /* Light gray border */
+    width: 250px;
+}
+
+.card-border {
+    border: 5px solid #007bff; /* Border properties */
+    border-radius: 10px; /* Rounded corner radius */
+}
+
+.card-border-plus {
+    border: 7px solid #007bff; /* Border properties */
+    border-radius: 20px; /* Rounded corner radius */
+}
+
+.card-border-minus {
+    border-radius: 20px; /* Rounded corner radius */
+}
+
+.card-border-minus-1 {
+    border-radius: 20px; /* Rounded corner radius */
+    border: 1px solid black;
+}
+
+.mech-bigger {
+    width: 500px;
+    height: auto;
+}
+.mech-bigger-2 {
+    width: 1100px;
+    height: auto;
+}
+
+.mech-bigger-3 {
+    width: 600px;
+    height: auto;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Dark gray background */
+    color: white; /* White text color */
+    border: none; /* Removes border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Sets font size for the text inside the button */
+}
+
+.submit-button:hover {
+    background-color: #555; /* Darker gray background on hover */
+}
+
+/* test results page */
+.feedback-container {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.user-answer, .correct-answer {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.result {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: #4CAF50; /* Green for correct */
+}
+
+.incorrect {
+    background-color: #F44336; /* Red for incorrect */
+}
+
+.neutral {
+    background-color: grey; /* Red for incorrect */
+}
+
+.recog-10 {
+    width: 103px;
+    height: auto;
+    margin-top: 10px;
+}
+.recog-face {
+    margin-left: -250px;
+}
+.recog-A {
+    width: 128px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: -280px;
+}
+.video-box {
+    margin-top: 20px;
+}
+.submit-shift {
+    margin-left: 375px;
+}
+.box-grey {
+    color: #f8f9fa;
+}
+.Next-Test-Space {
+    margin-left: 259px;
+}
+.cumulative {
+    margin-top: 10px;
+}
+.Home-Test-Space {
+    margin-left: 282px;
+}
+.movie-input-field {
+    position: relative;
+    bottom: 9px;
+}
+.movie-generate {
+    position: relative;
+    bottom: 15px;
+    left: -75px;
+}
+
+.move {
+    position: relative;
+    top: 10px;
+}
+.title-breath {
+    margin-bottom: 15px;
+}
+.vid-space {
+    margin-right: -50px;
+    position: relative;
+    right: -15px;
+}
+.lift {
+    position: relative;
+    top: -10px;
+}

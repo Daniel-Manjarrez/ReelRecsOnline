@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    var current_time = "{{ current_time }}";
+    var elapsed_time = parseFloat("{{ elapsed_time }}").toFixed(2);
+    console.log("Current time:", current_time);
+    console.log("Elapsed time:", elapsed_time, "minutes");
+</script>
+
+<br>
+
+<!-- Top Rated Kdramas to Watch-->
+<!-- Remember, this is wrapped in a container -->
+<h1>
+    Read Me On Movie Recommendation System
+</h1>
+
+<br>
+
+<div>
+    <span class="intro"><i>The following are the details of the movie recommendation system.</i></span>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <b>Overview</b>
+    </div>
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <p>This project aims to address the shortcomings of existing online movie recommendation systems by enhancing the quality and relevance of movie summaries using external APIs and artificial intelligence.</p>
+    </div>
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <b>Problem Statement</b>
+    </div>
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <p>Online movie recommendations and summaries often lack depth and accuracy, impacting user decision-making and satisfaction.</p>
+    </div>
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <b>Solution</b>
+    </div>
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <p>Integrating data from the Watchmode API, this system retrieves comprehensive movie details. Leveraging ChatGPT from OpenAI, it generates insightful and personalized summaries to improve user experience.</p>
+    </div>
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <b>Features</b>
+    </div>
+    <div class="col-md-12 d-flex align-items-stretch title-breath">
+        <ul>
+            <li>Query movie details (titles, descriptions, ratings) from Watchmode API via IMDB integration.</li>
+            <li>Utilize OpenAI's ChatGPT to generate enhanced movie summaries.</li>
+            <li>Provide personalized recommendations based on user preferences and movie data.</li>
+          </ul>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    var current_time = "{{ current_time }}";
+    var elapsed_time = parseFloat("{{ elapsed_time }}").toFixed(2);
+    console.log("Current time:", current_time);
+    console.log("Elapsed time:", elapsed_time, "minutes");
+</script>
+
+<br>
+
+<!-- Top Rated Kdramas to Watch-->
+<!-- Remember, this is wrapped in a container -->
+<h1>
+    Reel Recs
+</h1>
+
+<br>
+
+<div>
+    <span class="intro"><i>This site serves to give you movie recommendations.</i></span>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-md-6 d-flex align-items-stretch intro">
+        What movie do you want your recommendations based on?: 
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3 d-flex align-items-stretch">
+        <div class="movie-input-field">
+            <input type="text" id="movie-name" placeholder="Type a movie title">
+        </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-stretch">
+        <a href="/movie/O" class="btn btn-primary mt-auto movie-generate" id="generate-button">Generate</a>
+        <script>
+            // Function to print message to console
+            function printMessage(event) {
+                //event.preventDefault(); // Prevent the default action (navigation)
+                var movieTitle = document.getElementById("movie-name").value.trim(); // Trim whitespace
+                if (movieTitle) {
+                    var movieLink = "/movie/" + encodeURIComponent(movieTitle);
+                    document.getElementById("generate-button").setAttribute("href", movieLink);
+                    console.log("Generated link:", movieLink);
+                } else {
+                    console.log("Please enter a movie title.");
+                }
+            }
+    
+            // Function to handle keypress event
+            function handleKeyPress(event) {
+                if (event.key === 'Enter') { // Check if Enter key is pressed
+                    event.preventDefault(); // Prevent form submission if applicable
+                    document.getElementById("generate-button").click(); // Trigger the Generate button click
+                }
+            }
+
+            // Attach event listener to the Generate button
+            document.getElementById("generate-button").addEventListener("click", printMessage);
+
+            // Attach keypress event listener to the input field
+            document.getElementById("movie-name").addEventListener("keypress", handleKeyPress);
+        </script>
+    </div>
+</div>
+
+{% endblock %}
